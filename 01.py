@@ -1,6 +1,7 @@
+import os
 from collections import Counter, defaultdict
 
-with open('./inp/01.txt') as f:
+with open(f"./inp/{os.path.basename(__file__).split('.')[0]}.txt") as f:
     lines = [i.split() for i in f.read().split('\n')]
 
 l1 = list(sorted([int(i[0]) for i in lines]))
