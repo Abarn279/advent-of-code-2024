@@ -1,6 +1,5 @@
 import os
 import re
-import operator
 
 with open(f"./inp/{os.path.basename(__file__).split('.')[0]}.txt") as f:
     inp = f.read()
