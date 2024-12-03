@@ -1,5 +1,4 @@
 import os
-import operator
 
 with open(f"./inp/{os.path.basename(__file__).split('.')[0]}.txt") as f:
     lines = [list(map(int, i.split())) for i in f.read().split('\n')]
