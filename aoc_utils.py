@@ -183,3 +183,9 @@ def id_gen(start_at):
     while True:
         yield start_at
         start_at += 1
+        
+RIGHT = Vector2(1, 0); UP = Vector2(0, 1); LEFT = Vector2(-1, 0); DOWN = Vector2(0, -1)
+UNIT_DIRECTIONS = [RIGHT, UP, LEFT, DOWN]
+UP_RIGHT = Vector2(1, 1); UP_LEFT =  Vector2(-1, 1); DOWN_LEFT = Vector2(-1, -1); DOWN_RIGHT = Vector2(1, -1)
+DIAGONAL_DIRECTIONS = [UP_RIGHT, UP_LEFT, DOWN_LEFT, DOWN_RIGHT]
+ALL_DIRECTIONS = UNIT_DIRECTIONS + DIAGONAL_DIRECTIONS
